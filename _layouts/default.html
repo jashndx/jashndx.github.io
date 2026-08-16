@@ -56,14 +56,15 @@
 
     h1 {
       font-size: 26px;
-      margin-top: 0;
+      margin: 0 0 6px 0;
+      font-weight: 600;
     }
 
     /* Post metadata & listings */
     .post-date {
       color: #888;
       font-size: 14px;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
     }
 
     .post-entry {
@@ -108,8 +109,10 @@
 
   <main>
     {% if page.date %}
-      <div class="post-date">{{ page.date | date: "%B %d, %Y" }}</div>
+      <h1>{{ page.title }}</h1>
+      <div class="post-date">{{ page.date | date: "%b %d, %Y" }}</div>
     {% endif %}
+
     {{ content }}
   </main>
 </body>
