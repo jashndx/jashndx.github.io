@@ -2,18 +2,10 @@
 layout: default
 ---
 
-# Notes & Essays
-
-A minimalist index of thoughts, technical write-ups, and ideas.
-
----
-
-### All Posts
-
-<ul>
 {% for post in site.posts %}
-  <li>
-    {{ post.date | date: "%Y-%m-%d" }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+  <div class="post-entry">
+    <div class="post-date">{{ post.date | date: "%b %d, %Y" }}</div>
+    <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+    <p class="post-snippet">{{ post.description }}</p>
+  </div>
 {% endfor %}
-</ul>
