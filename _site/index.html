@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: "Jashandeep Singh" }}</title>
+  <title>Jashandeep Singh</title>
   <style>
     body {
       max-width: 700px;
@@ -116,10 +116,14 @@
   </header>
 
   <main>
-    {% if page.date %}
-      <div class="post-date">{{ page.date | date: "%B %d, %Y" }}</div>
-    {% endif %}
-    {{ content }}
+    
+    
+  <div class="post-entry">
+    <div class="post-date">Aug 16, 2026</div>
+    <a class="post-title" href="/2026/08/16/first-note.html">First Note</a>
+    <p class="post-snippet"></p>
+  </div>
+
   </main>
 </body>
 </html>

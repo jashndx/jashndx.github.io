@@ -1,10 +1,11 @@
 ---
 layout: default
-title: "First Note"
+title: "first note"
+description: "testing blog"
 ---
 
 # First Note
 
-*August 16, 2026*
+here marks the start of something new.
 
-Writing starts here. Plain text, ideas, code, and direct observations.
+## Actually?
